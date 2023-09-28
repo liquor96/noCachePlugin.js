@@ -1,0 +1,11 @@
+{
+  "name": "no-cache-plugin",
+  "version": "1.0.0",
+  "description": "webpack去缓存插件，解决小程序引入h5后缓存问题",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "liquor96",
+  "license": "Apache-2.0"
+}
