@@ -12,10 +12,11 @@ const NoCachePlugin = require('no-cache-plugin');
 
 module.exports = defineConfig({
   ...
-  configureWebpack: {
-    plugins: [
-      new NoCachePlugin(),
-    ],
+  configureWebpack: (config) => {
+    // 生产环境配置
+    if (process.env.NODE_ENV === "production") {
+      config.plugins.push(new NoCachePlugin());
+    }
   },
 });
 ```
